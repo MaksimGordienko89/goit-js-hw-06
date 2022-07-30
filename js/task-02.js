@@ -6,25 +6,11 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-
-const liArray = [];
+const ul = document.querySelector("#ingredients");
 
 ingredients.forEach((ingredient) => {
   const liItem = document.createElement("li");
   liItem.className = "item";
   liItem.textContent = ingredient;
-  liArray.push(liItem);
+  ul.appendChild(liItem);
 });
-
-console.log(...liArray);
-// const ul = document.createElement('ul');
-
-// names.forEach((name) => {
-// const li = document.createElement('li');
-
-// li.classList = 'item';
-// li.textContent = ім'я;
-// ul.appendChild(li);
-// });
-
-// document.querySelector('body').appendChild(ul);
