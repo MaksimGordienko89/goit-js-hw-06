@@ -15,6 +15,6 @@ function handleSubmit(event) {
     alert(messageAlert);
   } else {
     console.log({ emailValue, passwordlValue });
+    form.reset();
   }
-  form.reset();
 }
